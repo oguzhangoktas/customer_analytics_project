@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Ham verilerin saklandığı kaynak tablo"
+    database: ecommerce_db
+    schema: public
+    tables:
+      - name: customers
+        description: "Müşteri bilgilerini içeren ham veri"
+      - name: orders
+        description: "Sipariş bilgilerini içeren ham veri"

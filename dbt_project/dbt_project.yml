@@ -1,0 +1,16 @@
+name: 'dbt_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'ecommerce'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+test-paths: ["tests"]
+
+models:
+  dbt_project:
+    example:
+      +materialized: view
